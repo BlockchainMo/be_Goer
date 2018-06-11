@@ -2,3 +2,6 @@ Goal to a Goer
 
 = template.go =
 Output to Standard out
+
+= template_2.go =
+Output to http & Parse template from file
