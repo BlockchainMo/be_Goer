@@ -12,3 +12,21 @@ ref:https://gowalker.org/text/template
 
 = http1.go =
 create simple http
+
+= method.go =
+explain the using of method in Go 
+https://tour.golang.org/methods/1
+
+because encounter a problem in understanding source code:
+
+// HandleFunc registers the handler function for the given pattern.
+func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
+	mux.Handle(pattern, HandlerFunc(handler))
+}
+
+// HandleFunc registers the handler function for the given pattern
+// in the DefaultServeMux.
+// The documentation for ServeMux explains how patterns are matched.
+func HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
+	DefaultServeMux.HandleFunc(pattern, handler)
+}
