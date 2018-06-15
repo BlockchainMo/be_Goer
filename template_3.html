@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Go-Web</title>
+    </head>
+    <body>
+        {{range $key, $value := .Header}}
+                <p>
+                    key: {{$key}}
+                </p>
+                <p>
+                    Values:
+                    <ul>
+                        {{range $value}}
+                            <li>{{.}}</li>
+                        {{end}}
+                    </ul>
+                </p>
+        {{end}}
+    </body>
+</html>  
