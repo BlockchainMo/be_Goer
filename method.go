@@ -6,7 +6,8 @@ import (
 )
 
 type Vertex struct {
-	x, y float64
+	x float64
+	y float64
 }
 
 func (v Vertex) Abs() float64 {
@@ -16,4 +17,13 @@ func (v Vertex) Abs() float64 {
 func main() {
 	v := Vertex{3, 4}
 	fmt.Println(v.Abs())
+
+	fmt.Println(variable())
+}
+
+func variable() int {
+	a := 2
+	b := 4
+
+	return a * b
 }
